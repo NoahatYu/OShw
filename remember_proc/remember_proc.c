@@ -6,7 +6,7 @@
 
 MODULE_LICENSE("GPL");  /* Kernel needs this license. */
 
-#define ENTRY_NAME "remember"
+#define ENTRY_NAME "remember_proc"
 #define PERMS 0777
 #define PARENT NULL
 #define MAX_LEN 80
@@ -95,10 +95,10 @@ ssize_t procfile_write(struct file *filp, const char __user *buf, size_t count, 
        vfree(page);
        return -EFAULT;
     }
-    for(i = 0;i < 80;i++){
+    for(i = 0;i < MAX_LEN;i++){
         kbuf[i] = 0;
     }
-    strncpy(kbuf,page,80);
+    strncpy(kbuf,page,MAX_LEN);
 
    /* Now do something with the data, here we just print it */
     printk("User has sent the value of %s\n", page);

@@ -1,5 +1,5 @@
 ifneq ($(KERNELRELEASE),)
-   obj-m := remember.o
+   obj-m := remember_proc.o
 
 else
    KERNELDIR ?= \

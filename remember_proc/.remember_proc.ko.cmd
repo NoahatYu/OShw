@@ -1,0 +1,1 @@
+cmd_/home/noah/OShw/remember_proc/remember_proc.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/noah/OShw/remember_proc/remember_proc.ko /home/noah/OShw/remember_proc/remember_proc.o /home/noah/OShw/remember_proc/remember_proc.mod.o
