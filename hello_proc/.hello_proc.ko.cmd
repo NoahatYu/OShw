@@ -1,0 +1,1 @@
+cmd_/home/noah/os_hw/hw2/hello_proc/hello_proc.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/noah/os_hw/hw2/hello_proc/hello_proc.ko /home/noah/os_hw/hw2/hello_proc/hello_proc.o /home/noah/os_hw/hw2/hello_proc/hello_proc.mod.o
